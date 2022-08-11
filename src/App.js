@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './style/App.scss'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className='wrapper' id='wrapper'>
+      <div id='quote-box' className='quote-box'>
+        <div id='text' className='text'>This is a tex djjjjjjjjjhsjsdhjsdkjhdst</div>
+        <p id='author' className='author'>author name</p>
+        <div className='new-quote'>
+          <button>New Quote</button>
+        </div>
+        <div className='social-media'>
+          <button>Twitter</button>
+          <button>Tumbler</button>
+        </div>
+        
+        
+      </div>
+      </div>
   );
 }
 

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300;1,400;1,500;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+    background-color: rgb(236, 183, 83);
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8% auto auto;
+    button{
+        width: 100px;
+        height: 40px;
+    }
+    .quote-box{
+        text-align: center;
+        border: 5px solid black;
+        width: 500px;
+        height: 300px;
+
+
+        .text{
+            font-family: 'Cormorant', serif;
+            font-size: 40px;
+        }
+    }
+}
