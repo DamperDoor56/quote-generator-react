@@ -33,10 +33,10 @@ function App() {
   return (<>
 
     <div className='app'>
-        <header className='app-header'>
+        <header className='app-header' id='quote-box'>
             <p id='text' className='text'>"{quote}"</p>
             <p id='author' className='author'>-{author}</p>
-            <button onClick={() => generateRandomNumber()}>Change Quote</button>
+            <button id="new-quote" onClick={() => generateRandomNumber()}>Change Quote</button>
         </header>
     </div>
     </>
