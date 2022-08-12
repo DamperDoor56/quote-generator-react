@@ -4,25 +4,34 @@
     padding: 0%;
     background-color: rgb(236, 183, 83);
 }
-.wrapper{
+.app{
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 8% auto auto;
-    button{
-        width: 100px;
-        height: 40px;
-    }
-    .quote-box{
-        text-align: center;
-        border: 5px solid black;
-        width: 500px;
-        height: 300px;
+    justify-self: center;
 
-
-        .text{
-            font-family: 'Cormorant', serif;
-            font-size: 40px;
-        }
+    .app-header{
+        margin: 8% 0;
+        border: 3px solid rgb(230, 225, 225);
+        border-radius: 5px;
+        width: 700px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       button{
+        cursor: pointer;
+        background: snow;
+       }
+       .text{
+        padding: 2rem;
+        font-size: 35px;
+        
+       }
+       .author{
+        font-size: 25px;
+       }
     }
 }
