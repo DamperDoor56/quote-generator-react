@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, {useState, useEffect} from 'react';
-import { faTumblr, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import colorsArray from './colorsArray';
 import './style/App.scss'
 
@@ -12,7 +12,7 @@ function App() {
     const [randomNumber, setRandomNumber] = useState(0);
     const [quotesArray, setQuotesArray] = useState(null);
     const [accentColor, setAccentColor] = useState('#9bf6ff');
-
+    console.log(randomNumber);
 
     const fetchQuotes = async (url) =>{
         const response = await fetch(url)
@@ -23,7 +23,7 @@ function App() {
 
     useEffect(() =>{
         fetchQuotes(quoteJson)
-    }, [quoteJson])
+    }, [])
 
     const generateRandomNumber = () => {
         let rand = Math.floor(quotesArray.length * Math.random())
@@ -42,6 +42,7 @@ function App() {
             <p id='author' className='author'>-{author}</p>
             <button id="new-quote" style={{backgroundColor:accentColor}} onClick={() => generateRandomNumber()}>Change Quote</button>
             <a id='tweet-quote' style={{backgroundColor:accentColor}} className='twitter-btn' href={encodeURI(`http://www.twitter.com/intent/tweet?text=${quote} -${author}`)}><FontAwesomeIcon icon={faTwitter} /></a>
+
         </header>
     </div>
     </>
