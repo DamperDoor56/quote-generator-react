@@ -42,7 +42,6 @@ function App() {
             <p id='author' className='author'>-{author}</p>
             <button id="new-quote" style={{backgroundColor:accentColor}} onClick={() => generateRandomNumber()}>Change Quote</button>
             <a id='tweet-quote' style={{backgroundColor:accentColor}} className='twitter-btn' href={encodeURI(`http://www.twitter.com/intent/tweet?text=${quote} -${author}`)}><FontAwesomeIcon icon={faTwitter} /></a>
-
         </header>
     </div>
     </>
