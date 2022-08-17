@@ -36,7 +36,7 @@ function App() {
 
   return (<>
 
-    <div className='app' style={{backgroundColor:accentColor}}>
+    <div className='app'>
         <header className='app-header' id='quote-box' style={{color:accentColor}}>
             <p id='text' className='text'>"{quote}"</p>
             <p id='author' className='author'>-{author}</p>
