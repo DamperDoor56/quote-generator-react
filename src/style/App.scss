@@ -4,6 +4,7 @@
     padding: 0%;
 }
 body{
+    height: 100vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -12,14 +13,15 @@ body{
     transition: all 0.5s;
 
 .app{
+    text-align: center;
+    max-width: 100%;
+    align-self: center;
+    margin-top: 10%;
     
     .app-header{
         align-self: center;
         background-color: rgb(20, 20, 20);
-        padding: 2rem;
-        margin-top: 2%;
-        max-width: 550px;
-        height: auto;
+        padding: 3rem;
         border-radius: 15px;
 
         #new-quote{
@@ -37,10 +39,10 @@ body{
         }
         .text{
             clear: both;
-            width: 550px;
+            max-width: 550px;
             font-family: monospace;
             font-weight: 400;
-            font-size: 35px;
+            font-size: 30px;
             text-align: center;
             margin-top: 7%;
             animation-duration: 0.5s;
@@ -68,21 +70,7 @@ body{
                 opacity: 0.8;
             }
         }
-        .tumblr-btn{
-            margin-left: 10px;
-            border: none;
-            text-decoration: none;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            padding: 0.6rem 1rem 0.6rem 1rem;
-            font-size: 25px;
-            border-radius: 5px;
-            color: rgb(20, 20, 20);
-            float: left;
-            cursor: pointer;
-            &:hover{
-                opacity: 0.8;
-            }
+
     }
   }
  }
-}

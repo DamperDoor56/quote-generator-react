@@ -34,8 +34,10 @@ function App() {
         setAuthor(quotesArray[rand].author)
     }
 
-  return (<>
-
+  return (
+  <body style={{backgroundColor:accentColor}}>
+    <>
+  
     <div className='app'>
         <header className='app-header' id='quote-box' style={{color:accentColor}}>
             <p id='text' className='text'>"{quote}"</p>
@@ -45,6 +47,7 @@ function App() {
         </header>
     </div>
     </>
+    </body>
   )
 }
 
