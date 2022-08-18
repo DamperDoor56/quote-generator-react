@@ -2,15 +2,14 @@
 *{
     margin: 0;
     padding: 0%;
+    background-color:accentColor;
 }
 body{
-    height: 100vh;
-    text-align: center;
+    margin: 0;
+    padding: 0;
     display: flex;
+    text-align: center;
     justify-content: center;
-    align-items: center;
-    animation-duration: 0.5s;
-    transition: all 0.5s;
 
 .app{
     text-align: center;
