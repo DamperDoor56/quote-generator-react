@@ -27,9 +27,8 @@ body{
 
 .app{
     text-align: center;
-    max-width: 100%;
+    max-width: 60%;
     align-self: center;
-    margin-top: 0%;
     
     .app-header{
         align-self: center;
@@ -52,7 +51,7 @@ body{
         }
         .text{
             clear: both;
-            max-width: 550px;
+            min-width: 100px;
             font-family: monospace;
             font-weight: 400;
             font-size: 30px;
