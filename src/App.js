@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, {useState, useEffect} from 'react';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import colorsArray from './colorsArray';
-import $ from 'jquery';
 import './style/App.scss'
 
 let quoteJson = "https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json";
@@ -32,27 +31,21 @@ function App() {
         setAccentColor(colorsArray[rand])
         setQuote(quotesArray[rand].quote)
         setAuthor(quotesArray[rand].author)
-        $('html body').animate(
-            {
-              backgroundColor: (colorsArray[rand]),
-              color: (colorsArray[rand])
-            },
-            1000);
-    }
-
+    }  
+   
   return (
-  
+  <body style={{backgroundColor:accentColor}} >
     <>
     <div className='app'>
         <header className='app-header' id='quote-box' style={{color:accentColor}}>
             <p id='text' className='text'>"{quote}"</p>
             <p id='author' className='author'>-{author}</p>
-            <button id="new-quote" style={{backgroundColor:accentColor}} onClick={() => generateRandomNumber()}>Change Quote</button>
+            <button id="new-quote" className='button' style={{backgroundColor:accentColor}} onClick={() => generateRandomNumber()}>Change Quote</button>
             <a id='tweet-quote' style={{backgroundColor:accentColor}} className='twitter-btn' href={encodeURI(`http://www.twitter.com/intent/tweet?text=${quote} -${author}`)}><FontAwesomeIcon icon={faTwitter} /></a>
         </header>
     </div>
     </>
-    
+    </body>
   )
 }
 
