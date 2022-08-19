@@ -51,7 +51,7 @@ body{
         }
         .text{
             clear: both;
-            min-width: 100px;
+            min-width: 80px;
             font-family: monospace;
             font-weight: 400;
             font-size: 30px;
@@ -89,6 +89,6 @@ body{
 
  @media screen and (max-width: 500px) {
     .text{
-        font-size: 10px;
+        font-size: 17px;
     }
  }
