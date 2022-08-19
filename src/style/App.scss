@@ -27,7 +27,7 @@ body{
 
 .app{
     text-align: center;
-    max-width: 60%;
+    max-width: 50%;
     align-self: center;
     
     .app-header{
@@ -51,7 +51,6 @@ body{
         }
         .text{
             clear: both;
-            min-width: 80px;
             font-family: monospace;
             font-weight: 400;
             font-size: 30px;
@@ -91,14 +90,18 @@ body{
     body .app .app-header .text{
         font-size: 20px !important;
     }
-    .author p{
+    body .app .app-header .author{
         font-size: 15px !important;
         letter-spacing: normal  !important;
     }
-    .twitter-btn button {
+    body .app .app-header .twitter-btn {
         font-size: 15px  !important;
     }
-    #new-quote{
+    body .app {
+        align-self: center;
+        max-width: 90%;
+    }
+    body .app .app-header #new-quote{
         font-size: 10px !important;
     }
  } 
